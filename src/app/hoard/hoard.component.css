@@ -1,0 +1,12 @@
+.color-box {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	background-color: rgb(223, 157, 14);
+}
+.color-box-large {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-color: rgb(223, 157, 14);
+}

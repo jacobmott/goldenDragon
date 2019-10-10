@@ -1,0 +1,19 @@
+{
+  "resources": [
+    {
+      "type": "url",
+        "name": "dev server FXWEB PFPNTN",
+        "link": "https://olb1-dev.aws.apiture.com:53111/start/PFPNTN",
+        "newwindow": true,
+        "chestId": 1
+
+    },
+    {
+      "type": "url",
+        "name": "dev server FXIM PFPNTN",
+        "link": "https://olb1-dev.aws.apiture.com:53111/piles/fxim.pile",
+        "newwindow": true,
+        "chestId": 2
+    }
+  ]
+}

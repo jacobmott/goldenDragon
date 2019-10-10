@@ -25,12 +25,14 @@ import {
     trigger('openClose', [
       // ...
       state('open', style({
-        height: '120px',
+        height: '105px',
+        width: '105px',
         opacity: 1,
         backgroundColor: 'yellow'
       })),
       state('closed', style({
         height: '100px',
+        width: '100px',
         opacity: 0.5,
         backgroundColor: 'green'
       }))
@@ -70,7 +72,12 @@ export class HoardComponent implements OnInit {
 
   chestImage(chestId: number): string {
     console.log("chestImage for chestId:"+chestId);
-    return this.chestIdsMapImage.get(chestId);
+    if (this.chestIdsMapImage.has(chestId)){
+      return this.chestIdsMapImage.get(chestId);
+    }
+    else{
+      return "assets/chest1.jpg";
+    }
   }
 
 
@@ -113,7 +120,7 @@ export class HoardComponent implements OnInit {
           hoardArrayRef = this.hoardMap.get(chestId);
         }
         this.chestIdsMapMouseHover.set(chestId, false);
-        this.chestIdsMapImage.set(chestId, "chest1.jpg");
+        this.chestIdsMapImage.set(chestId, "assets/chest1.jpg");
         hoardArrayRef.push(new HoardEntry(resource['type'], resource['name'], resource['link'], resource['newwindow'], resource['chestId']));
       }
     });

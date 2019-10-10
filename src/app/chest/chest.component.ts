@@ -15,30 +15,21 @@ export class ChestComponent implements OnInit {
   hoard: HoardEntry[] = [];
   open: boolean = false;
 
-
   constructor(private hoardService: HoardService, @Inject(MAT_DIALOG_DATA) public data: any) {
     this.chestId = data.chestId;
   }
 
   ngOnInit() {
-    // this.open = !this.open;
-    // if (this.open == true){
-      let data = this.hoardService.getHoard().subscribe((data: Object)=>{
-        this.hoard = [];
-        let resources: [Object] = data['resources'];
-        for (let resource of resources) {
-          let chestId: number = resource['chestId'];
-          if (chestId == this.chestId){
-            this.hoard.push(new HoardEntry(resource['type'], resource['name'], resource['link'], resource['newwindow'], resource['chestId']));
-          }
+    let data = this.hoardService.getHoard().subscribe((data: Object)=>{
+      this.hoard = [];
+      let resources: [Object] = data['resources'];
+      for (let resource of resources) {
+        let chestId: number = resource['chestId'];
+        if (chestId == this.chestId){
+          this.hoard.push(new HoardEntry(resource['type'], resource['name'], resource['link'], resource['newwindow'], resource['chestId']));
         }
-      });
-    // }
-    // else{
-      // this.hoard = [];
-      // this.colorBox = 'color-box';
-    // }
-    console.log("List out my chest data: chest id is: "+this.chestId);
+      }
+    });
   }
 
 }

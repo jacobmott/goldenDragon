@@ -14,8 +14,6 @@ import {
   // ...
 } from '@angular/animations';
 
-
-
 @Component({
   selector: 'app-hoard',
   templateUrl: './hoard.component.html',
@@ -40,7 +38,6 @@ import {
 })
 
 
-
 export class HoardComponent implements OnInit {
 
   hoard: HoardEntry[] = [];
@@ -56,22 +53,18 @@ export class HoardComponent implements OnInit {
   mouseOver(chestId: number) {
     this.chestIdsMapMouseHover.set(chestId, true);
     this.chestIdsMapImage.set(chestId, "assets/chest2.jpg");
-    //console.log("MouseOver for chestId:"+chestId);
   }
 
   mouseOut(chestId: number) {
     this.chestIdsMapMouseHover.set(chestId, false);
     this.chestIdsMapImage.set(chestId, "assets/chest1.jpg");
-    //console.log("mouseOut for chestId:"+chestId);
   }
 
   isChestHovered(chestId: number): boolean {
-    //console.log("isChestHovered for chestId:"+chestId);
     return this.chestIdsMapMouseHover.get(chestId);
   }
 
   chestImage(chestId: number): string {
-    console.log("chestImage for chestId:"+chestId);
     if (this.chestIdsMapImage.has(chestId)){
       return this.chestIdsMapImage.get(chestId);
     }
@@ -87,11 +80,10 @@ export class HoardComponent implements OnInit {
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
 
-
     dialogConfig.position = {
       'top': '0',
       left: '0'
-  };
+    };
 
     const dialogRef = this.dialog.open(ChestComponent, {
       height: '400px',

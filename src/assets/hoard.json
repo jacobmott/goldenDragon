@@ -14,6 +14,20 @@
         "link": "https://olb1-dev.aws.apiture.com:53111/piles/fxim.pile",
         "newwindow": true,
         "chestId": 2
+    },
+    {
+      "type": "url",
+        "name": "Azure Session - AWS",
+        "link": "https://account.activedirectory.windowsazure.com/r#/applications",
+        "newwindow": true,
+        "chestId": 3
+    },
+    {
+      "type": "url",
+        "name": "Apiture - Confluence",
+        "link": "https://apiture.atlassian.net/wiki/spaces/OB/overview",
+        "newwindow": true,
+        "chestId": 4
     }
   ]
 }

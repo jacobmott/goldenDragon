@@ -3,6 +3,7 @@ import { HoardService } from '../hoard.service'
 import { HoardEntry } from '../../classes/hoardentry'
 import {MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { Inject } from '@angular/core';
+import * as url from "url";
 
 @Component({
   selector: 'app-chest',
@@ -26,7 +27,7 @@ export class ChestComponent implements OnInit {
       for (let resource of resources) {
         let chestId: number = resource['chestId'];
         if (chestId == this.chestId){
-          this.hoard.push(new HoardEntry(resource['type'], resource['name'], resource['link'], resource['newwindow'], resource['chestId']));
+          this.hoard.push(new HoardEntry(resource['type'], resource['name'], resource['link'], resource['newwindow'], resource['chestId'], resource['image']));
         }
       }
     });

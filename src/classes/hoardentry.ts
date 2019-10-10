@@ -5,13 +5,15 @@ export class HoardEntry {
   link: string;
   newwindow: boolean;
   chestId: number;
+  image: string;
 
-  constructor(type, name, link, newwindow, chestId) {
+  constructor(type, name, link, newwindow, chestId, image) {
       this.type = type;
       this.name = name;
       this.link = link;
       this.newwindow = newwindow;
       this.chestId = chestId;
+      this.image = image;
   }
   getType() {
       return this.type;
@@ -35,13 +37,23 @@ export class HoardEntry {
       return this.newwindow;
   }
   setNewWindow(newwindow: boolean) {
-      this.newwindow = newwindow;
+    this.newwindow = newwindow;
   }
   getChestId() {
     return this.chestId;
   }
   
   setChestId(chestId: number) {
-      this.chestId = chestId;
+    this.chestId = chestId;
   }
+
+  getImage() {
+    return this.image;
+  }
+  
+  setImage(image: string) {
+    this.image = image;
+  }
+
+  
 }

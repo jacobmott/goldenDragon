@@ -5,29 +5,32 @@
         "name": "dev server FXWEB PFPNTN",
         "link": "https://olb1-dev.aws.apiture.com:53111/start/PFPNTN",
         "newwindow": true,
-        "chestId": 1
-
+        "chestId": 1,
+        "image": "../../assets/olb.jpg"
     },
     {
       "type": "url",
         "name": "dev server FXIM PFPNTN",
         "link": "https://olb1-dev.aws.apiture.com:53111/piles/fxim.pile",
         "newwindow": true,
-        "chestId": 2
+        "chestId": 2,
+        "image": "../../assets/fxim.jpg"
     },
     {
       "type": "url",
         "name": "Azure Session - AWS",
         "link": "https://account.activedirectory.windowsazure.com/r#/applications",
         "newwindow": true,
-        "chestId": 3
+        "chestId": 3,
+        "image": "../../assets/azure_session.jpg"
     },
     {
       "type": "url",
         "name": "Apiture - Confluence",
         "link": "https://apiture.atlassian.net/wiki/spaces/OB/overview",
         "newwindow": true,
-        "chestId": 4
+        "chestId": 4,
+        "image": "../../assets/confluence.jpg"
     }
   ]
 }

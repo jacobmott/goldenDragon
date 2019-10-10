@@ -88,6 +88,7 @@ export class HoardComponent implements OnInit {
     const dialogRef = this.dialog.open(ChestComponent, {
       height: '400px',
       width: '600px',
+      panelClass: 'custom-modalbox',
       data: { chestId: chestId },
     });
 
@@ -113,7 +114,7 @@ export class HoardComponent implements OnInit {
         }
         this.chestIdsMapMouseHover.set(chestId, false);
         this.chestIdsMapImage.set(chestId, "assets/chest1.jpg");
-        hoardArrayRef.push(new HoardEntry(resource['type'], resource['name'], resource['link'], resource['newwindow'], resource['chestId']));
+        hoardArrayRef.push(new HoardEntry(resource['type'], resource['name'], resource['link'], resource['newwindow'], resource['chestId'], resource['image']));
       }
     });
   }

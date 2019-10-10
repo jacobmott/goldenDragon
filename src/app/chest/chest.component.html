@@ -1,5 +1,8 @@
-<body>
-<div *ngFor="let entry of hoard">
-<a href="{{entry.getLink()}}" target="_blank">{{entry.getName()}}</a>
-</div>
+<body class="bag">
+<br>
+<br>
+<a href="{{entry.getLink()}}" target="_blank" *ngFor="let entry of hoard">
+  <img border="0" alt="W3Schools" src="{{entry.getImage()}}" width="100" height="100">
+</a>
+<div> </div>
 </body>

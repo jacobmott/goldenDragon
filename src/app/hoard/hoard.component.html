@@ -1,5 +1,5 @@
 
 <div (mouseover)="mouseOver(chestId)" (mouseout)="mouseOut(chestId)" [@openClose]="isChestHovered(chestId) ? 'open' : 'closed'" (click)="onClick(chestId)" id="{{chestId}}" class="{{colorBox}}" *ngFor="let chestId of chestIds">
-    <img height="100%" width="100%" [src]="chestImage(chestId)" />
+    <img height="100%" width="100%" [src]="chestImage(chestId) " />
 </div>
   

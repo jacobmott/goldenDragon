@@ -1,7 +1,14 @@
 .bag {
 	background-color: #665127;
-	background-image: url('../../assets/chest1_open.jpg');
+	background-image: url('../../assets/chest2_open.jpg');
 	background-size:     cover;                      /* <------ */
 	background-repeat:   no-repeat;
 	background-position: center center;              /* optional, center the image */
+}
+
+
+.link {
+
+	padding-left: 10%;
+
 }

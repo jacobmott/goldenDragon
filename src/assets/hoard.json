@@ -31,6 +31,22 @@
         "newwindow": true,
         "chestId": 4,
         "image": "../../assets/confluence.jpg"
+    },
+    {
+      "type": "url",
+        "name": "RunMan - GitHub - Cool Angular browser game - With nice github",
+        "link": "https://github.com/MurhafSousli",
+        "newwindow": true,
+        "chestId": 5,
+        "image": "../../assets/murhaf-sousli-github-runman.jpg"
+    },
+    {
+      "type": "url",
+        "name": "RunMan - RunMan site - Cool Angular browser game - With nice github",
+        "link": "https://murhafsousli.github.io/runman/",
+        "newwindow": true,
+        "chestId": 5,
+        "image": "../../assets/runman.jpg"
     }
   ]
 }
